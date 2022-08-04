@@ -9,6 +9,10 @@ body{
     max-width: 1600px; width: 100%; margin: 0px auto;
 }
 
+.menu-bar{
+    display: none;
+}
+
 .navbar-container{
     /* background-color: aquamarine; */
     
@@ -115,4 +119,139 @@ li:nth-child(1){
 }
 
 
+@media screen and (max-width:1000px) {
+  
+
+    .navbar-container{
+        margin-left:0px ;
+    }
+
+    .heading-text{
+        font-size: 50px;
+    }
+
+    .banner-container>div>img{
+        /* border: 5px solid rebeccapurple; */
+        width: 40vw;
+        height: 50vh;
+    }
+
+    .list-item{
+        font-size: 15px;
+    }
+
+    .nav-button{
+        width:100px;
+       
+        height: 30px;
+    }
+
+    .btn{
+
+        margin-top: 30px;
+        padding:10px;
+        
+        height: 60px; 
+     }
+    
+    
+}
+
+@media screen and (max-width:750px) {
+    
+
+    .grow-list{
+        display: none;
+    }
+    .menu-bar{
+        display: inherit;
+        width:50px;
+        height: 50px;
+        padding-top: 10px;
+    }
+    .navbar-container{
+        width:100vw;
+        
+    }
+    .navbar-container>div:nth-child(1)>img{
+        width:90px;
+        height: 50px;
+        margin-left: 20px;
+
+    }
+    .nav-button{
+        margin-left: 30vw;
+    }
+
+    .btn{
+        position: absolute;
+        bottom: 0%;
+        top:100%;
+        left:39vw;
+        width:180px;
+        margin-left: 0vw;
+        
+      
+        
+    }
+
+    .banner-container{
+        flex-direction: column;
+     
+        margin: 20px;
+        
+    }
+    .banner-container>div:nth-child(2){
+        position: inherit;
+        height: 80vh;
+       
+        /* background-color: aquamarine; */
+    
+    }
+
+    .banner-container>div:nth-child(2)>img{
+        border-radius: 40%;
+    }
+
+    .banner-container>div:nth-child(1){
+        margin: 0px;
+    }
+
+   
+
+    .heading-text{
+        font-size: 45px;
+       text-align: center;
+       
+       
+    }
+
+    .description{
+       
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .btn{
+        left:39vw;
+        width:100px;
+        margin-left: 0vw;
+        top:120%;
+   
+        
+    }
+    .heading-text{
+        font-size: 45px;
+        text-align: center;
+        margin: 0px 50px;
+    }
+    .description{
+        font-size: 20px;
+        text-align: center;
+        margin: 0px 80px;
+    }
+    
+}
 
